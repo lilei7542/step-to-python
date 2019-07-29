@@ -1,0 +1,282 @@
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/COMMIT_EDITMSG.COMMIT_EDITMSG b/COMMIT_EDITMSG.COMMIT_EDITMSG
+new file mode 100644
+index 0000000..48c4176
+--- /dev/null
++++ b/COMMIT_EDITMSG.COMMIT_EDITMSG
+@@ -0,0 +1,9 @@
++a test for sublime 1
++
++# --------------
++# Please enter the commit message for your changes. Everything below
++# this paragraph is ignored, and an empty message aborts the commit.
++# Just close the window to accept your message.
++diff --git a/test b/test
++new file mode 100644
++index 0000000..e69de29
+\ No newline at end of file
+diff --git a/README.md b/README.md
+index 076e4e3..c581a64 100644
+--- a/README.md
++++ b/README.md
+@@ -4,3 +4,4 @@
+    		git add --all 
+    		git commit -m "something to write for mark" 
+    		git push
++
+diff --git a/a.py b/a.py
+new file mode 100644
+index 0000000..8a93516
+--- /dev/null
++++ b/a.py
+@@ -0,0 +1 @@
++print ('a')
+diff --git a/b.py b/b.py
+new file mode 100644
+index 0000000..b6bf4e6
+--- /dev/null
++++ b/b.py
+@@ -0,0 +1 @@
++print ("a")
+\ No newline at end of file
+diff --git a/c.py b/c.py
+new file mode 100644
+index 0000000..2d02df8
+--- /dev/null
++++ b/c.py
+@@ -0,0 +1 @@
++print ('abcde')
+\ No newline at end of file
+diff --git a/d.py b/d.py
+new file mode 100644
+index 0000000..2e65efe
+--- /dev/null
++++ b/d.py
+@@ -0,0 +1 @@
++a
+\ No newline at end of file
+diff --git a/daily_project/c3.py b/daily_project/c3.py
+index 3e76e68..3952694 100644
+--- a/daily_project/c3.py
++++ b/daily_project/c3.py
+@@ -5,17 +5,25 @@
+ # import sys
+ 
+ 
+-a = input('please input something')
+-print(a)
++# a = input('please input something')
++# print(a)
+ # print ('f')
+ # print(end='\n')
+-ads
+-adsaf
+-dfaf
+-sdfasf
+-dsafafasfdasf
+-asdafs
+-adsfa
++
++
++import calendar
++ 
++# 输入指定年月
++# yy = int(input("输入年份: "))
++# mm = int(input("输入月份: "))
++
++yy=int(2018)
++# mm=int(8)
++mm=eval('8')
++
++# 显示日历
++print(calendar.month(yy,mm))
++
+ 
+ 
+ 
+diff --git a/daily_project/c4.py b/daily_project/c4.py
+new file mode 100644
+index 0000000..6a69230
+--- /dev/null
++++ b/daily_project/c4.py
+@@ -0,0 +1,22 @@
++
++
++
++# import datetime
++# def getYesterday(): 
++#     today=datetime.date.weekday('Monday')
++#     # oneday=datetime.timedelt
++#     # yesterday=today-oneday  
++#     # return yesterday
++#     return today
++
++# # 输出
++# print(getYesterday())
++
++import datetime
++# def a():
++today=datetime.date
++	# today.weekday(self)
++today.year()
++# print (today)
++
++# a()
+\ No newline at end of file
+diff --git a/daily_project/c5.py b/daily_project/c5.py
+new file mode 100644
+index 0000000..55fcb24
+--- /dev/null
++++ b/daily_project/c5.py
+@@ -0,0 +1,20 @@
++from datetime import *
++a=datetime.timetuple
++# print (a.__dir__()) 
++# print (datetime.now().date().day)
++# print (datetime.now().date().year)
++
++import time
++# l=time.time()
++# print (type(l))
++j=time.strptime("30 Nov 00", "%d %b %y")
++m=time.sleep(0.01)
++print (dir(m))
++# print (j.tm_mon)
++print (dir(j))
++# print (b.minute)
++
++
++print('--------------------------------------------------')
++
++
+diff --git a/daily_project/c6.py b/daily_project/c6.py
+new file mode 100644
+index 0000000..6c752e8
+--- /dev/null
++++ b/daily_project/c6.py
+@@ -0,0 +1,14 @@
++from datetime import *
++import pytz
++# print (dir(datetime.now))
++z=datetime.now(tz=pytz.timezone('Asia/Chongqing'))
++j=datetime.now()
++print (z)
++print (j)
++l=pytz.timezone('Asia/Chongqing')
++print (l)
++# m=datetime.dst()
++a=dir(pytz.tzinfo) 
++print(a)
++
++
+diff --git a/daily_project/c7.py b/daily_project/c7.py
+new file mode 100644
+index 0000000..0dbec62
+--- /dev/null
++++ b/daily_project/c7.py
+@@ -0,0 +1,10 @@
++from datetime import *
++
++# attribute 属性
++# instance  实例
++ 
++today=date.today()
++onday=timedelta(weeks=1)
++last_week=today-onday
++print (last_week)
++# print (timedelta.resolution)
+diff --git a/daily_project/c8.py b/daily_project/c8.py
+new file mode 100644
+index 0000000..cea8a3a
+--- /dev/null
++++ b/daily_project/c8.py
+@@ -0,0 +1,60 @@
++z = ["a", "b", "mpilgrim", "z", "example"]
++print (z)
++z.append('jack')
++print (z)
++print (z[2])
++z.pop()
++z.pop(1)
++print (z)
++print (z[-1])
++print (z)
++z.insert(3,'suse')
++print (z)
++z.extend(['fd','ftp'])
++print (z)
++x=z.index('fd')
++print (x)
++z=z+['dududu']+['lalala']
++print (z)
++print('----------------------------------------')
++print('----------------------------------------')
++
++for i in range(5):
++	# h=str(z[-1])
++	i=1
++	i+=1
++	h=str(z.pop(-1))
++	print('my name is %s' %h)
++
++print (z)
++
++#       %s  传递str参数
++#       %d  传递int参数
++#       %f  传递float参数
++
++
++print("My name is %s" %("Alfred.Xue"))
++print("My year is %d" %(25))
++print("My weight is %f kg" %(68.2))
++
++name='john'
++old ='20'
++print("My name is %s and i'm %d" %('john', 12))
++print("My name is %s and i'm %s" %(name, old))  #多个%s参数
++print ('-------------------------------')
++
++
++#list can change str simplely into list
++tmpstr = 'abcdefg,jj'
++tmplist = list(tmpstr)
++print (tmplist)
++print ('-------------------------------')
++
++
++#how to use join 
++#funtion-> translate list into str
++we=",".join(tmplist)
++wr="".join(tmplist)
++print (we)
++print (wr)
++print (type(we))
+\ No newline at end of file
+diff --git a/daily_project/c9.py b/daily_project/c9.py
+new file mode 100644
+index 0000000..fdb457c
+--- /dev/null
++++ b/daily_project/c9.py
+@@ -0,0 +1,6 @@
++import matplotlib.pyplot as plt
++import numpy as np
++ 
++data = np.arange(100, 201)
++plt.plot(data)
++plt.show()
+\ No newline at end of file
+diff --git a/test b/jast a save
+similarity index 100%
+rename from test
+rename to jast a save
+diff --git a/learn_class/abc.py b/learn_class/abc.py
+new file mode 100644
+index 0000000..38332a2
+--- /dev/null
++++ b/learn_class/abc.py
+@@ -0,0 +1 @@
++print
+\ No newline at end of file

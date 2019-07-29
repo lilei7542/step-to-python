@@ -1,0 +1,25 @@
+import time
+class TimeTest(object):
+    def __init__(self,hour,minute,second):
+        self.hour = hour
+        self.minute = minute
+        self.second = second
+    @staticmethod   
+    def showTime():      
+        return time.strftime("%H:%M:%S", time.localtime())
+ 	#或者      showTime=statcimethod(showTime)
+     
+print (TimeTest.showTime()) 		静态函数可以通过类名以及实例两种方法调用！
+t = TimeTest(2,10,10)
+nowTime = t.showTime()
+print (nowTime)
+
+
+静态函数可以通过类名以及实例两种方法调用！
+
+实例不能访问普通函数 
+
+静态方法不用传入参数
+
+
+原则上，类方法是将类本身作为对象进行操作的方法

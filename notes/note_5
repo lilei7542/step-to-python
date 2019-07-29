@@ -1,0 +1,26 @@
+原则上，类方法是将类本身作为对象进行操作的方法
+
+
+
+eg.1
+
+class A:  
+    member = "this is a test."  
+    def __init__(self):  
+        pass  
+ 
+    @classmethod  
+    def Print1(cls):  
+        print "print 1: ", cls.member  
+
+
+
+
+
+class Pizza(object):
+	radius = 42
+	@classmethod
+	def get_radius(cls):
+		return cls.radius
+
+

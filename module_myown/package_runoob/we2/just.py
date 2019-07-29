@@ -1,0 +1,2 @@
+def sz():
+	print ('aaa')

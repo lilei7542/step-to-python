@@ -1,0 +1,22 @@
+re.match(pattern, string, flags=0)
+
+re.I 	忽略大小写
+re.M 	将所有行的尾字母输出 multiple
+
+re.match与re.search的区别
+re.match只匹配字符串的开始，如果字符串开始不符合正则表达式，则匹配失败，函数返回None；而re.search匹配整个字符串，直到找到一个匹配。
+
+re.compile(pattern,flags=0)
+re.escape(pattern)
+re.findall(pattern.string,flags=0)
+re.finiter(pattern,string,flags=0)
+re.fullmatch(pattern,string,flags=0)
+re.match(pattern, string, flags=0)
+re.purge()
+re.search(pattern,string,flags=0)
+re.split(pattern,string,maxsplit=0,flags=0)
+re.sub(pattern,repl,string,count=0,flags=0)
+re.subn(pattern,repl,string,count=0,flags=0)
+re.template(pattern,flags=0)
+
+
