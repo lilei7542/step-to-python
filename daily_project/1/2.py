@@ -17,5 +17,9 @@ b=[10,20]
 c=[100,200,300]
 a.extend(b)
 c=b+a
-print (a)
+
 print (c)
+print (a)
+print (b)
+
+
